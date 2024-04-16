@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <style></style>
+  </head>
+  <body>
+    <h1 class="color" id="title">한글은 아름다운 글입니다.</h1>
+
+    <div></div>
+    <script src="./script/jquery-3.7.1.js"></script>
+    <script>
+      $("div").addClass("on");
+      $("h1").removeClass("color");
+      $("h1").toggleClass("active");
+      // toggle 없으면 생기고 있으면 없어짐
+      $("div").hasClass("on"); // 있는지 없는지 확인
+      console.log($("div").hasClass("on")); // boolean값 true or false
+      console.log($("h1").hasClass("on"));
+    </script>
+    <!--
+      선택자 : $('css 모든 선택자')
+      style 디자인 :css ( { "속성" : "값", "속성" : "값"....... } )
+
+      .innerHTML    .html()
+      .innerText    .text()
+      .textContent
+
+      .append() .append()
+      .appendChild()
+
+      .insertAdjcentElement("afterend, afterstart | beforeend, beforestart ", 요소추가)
+
+
+      jQuery
+      $("h1").append("<u>text1</u>");
+      $("h1").prepend("<u>text1</u>");
+      $("h1").before("<u>before</u>");
+      $("h1").after("<u>after</u>");
+
+      attributes
+      .setAttribute(속성, 값)   .attr(속성, 값)
+      .getAttribute(속성)     .attr(속성)
+
+      className
+      classList.add()       .addClass()
+      classList.remove()    .removeClass()
+      classList.toggle()    .toggleClass()
+      classList.contains()  .hasClass()
+    -->
+  </body>
+</html>
