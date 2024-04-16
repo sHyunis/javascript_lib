@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <style></style>
+  </head>
+  <body>
+    <h1 class="color" id="title">한글은 아름다운 글입니다.</h1>
+
+    <script src="./script/jquery-3.7.1.js"></script>
+    <script>
+      // document.addEventListener('DOMContentLoaded',()=>{})
+      //jQuery 화살표 함수를 사용하지 마세요
+
+      // $("h1").css("color", "red");
+      // $("#title").css("font-size", "44px");
+      // $(".color").css("backgroundColor", "green");
+
+      // chainning 기법
+      // $("h1").css("color", "red");
+      //  .css("font-size", "44px");
+      //  .css("backgroundColor", "green");
+
+      // 객체배열 사용하는 법
+      $("h1").css({
+        color: "red",
+        "font-size": "44px",
+        backgroundColor: "green",
+      });
+    </script>
+    <!--
+      선택자 : $('css 모든 선택자')
+
+    -->
+  </body>
+</html>
