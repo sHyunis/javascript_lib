@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* 
+    여러분 작업 자주 사용되는 style
+    여러분의 라이브러리
+*/
+.flex_box {
+  display: flex;
+}
+.grid_box {
+  display: grid;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: skyblue;
+}
